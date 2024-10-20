@@ -1,0 +1,19 @@
+[package]
+name = "zeromq-broker"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+zmq = "0.10"
+rand = "0.8.5"
+
+[[bin]]
+path = "./src/broker.rs"
+name = "broker"
+
+[[bin]]
+path = "./src/publisher.rs"
+name = "publisher"
+[[bin]]
+path = "./src/consumer.rs"
+name = "consumer"
